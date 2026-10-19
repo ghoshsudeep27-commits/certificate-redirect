@@ -4,23 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Certificate Portal &mdash; Human Skills by Sudeep Ghosh</title>
-<meta name="description" content="Submit your certificate request, track an existing request, or verify a Human Skills certificate.">
+<meta name="description" content="Submit your certificate request, track an existing request, or verify a Human Skills certificate of completion. Certificates are normally issued within 3 working days.">
 <meta name="author" content="Sudeep Ghosh">
 <link rel="canonical" href="https://certificate.humanskills.in/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Certificate Portal &mdash; Human Skills by Sudeep Ghosh">
-<meta property="og:description" content="Submit, track or verify a Human Skills certificate of completion.">
+<meta property="og:description" content="Submit, track or verify your Human Skills certificate of completion. Normally issued within 3 working days.">
 <meta property="og:url" content="https://certificate.humanskills.in/">
-<meta property="og:image" content="https://humanskills.in/images/og-image.png">
+<meta property="og:image" content="https://certificate.humanskills.in/assets/og-image-portal.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="https://humanskills.in/favicon-96x96.png">
+<meta name="twitter:image" content="https://certificate.humanskills.in/assets/og-image-portal.jpg">
+<meta name="theme-color" content="#0a0e1a">
+<link rel="icon" type="image/png" href="assets/favicon-96x96.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="https://humanskills.in/images/hero-desktop.webp" media="(min-width: 769px)">
-<link rel="preload" as="image" href="https://humanskills.in/images/hero-mobile.webp" media="(max-width: 768px)">
-<!-- Reuse the main site's stylesheet so this page always matches humanskills.in -->
-<link rel="stylesheet" href="https://humanskills.in/site.css">
+<link rel="preload" as="image" href="assets/hero-desktop.webp" media="(min-width: 769px)">
+<link rel="preload" as="image" href="assets/hero-mobile.webp" media="(max-width: 768px)">
+<!-- Bundled copy of the main site's stylesheet so this page is self-contained -->
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Certificate Portal \u2014 Human Skills by Sudeep Ghosh",
+  "url": "https://certificate.humanskills.in/",
+  "description": "Submit, track or verify a Human Skills certificate of completion.",
+  "inLanguage": "en",
+  "isPartOf": { "@type": "WebSite", "name": "Human Skills by Sudeep Ghosh", "url": "https://humanskills.in/" },
+  "publisher": { "@type": "Person", "name": "Sudeep Ghosh", "url": "https://humanskills.in/" }
+}
+</script>
 <style>
 /* ===== Certificate Portal — scoped block ===== */
 /* Hero artwork — same treatment as the homepage .hero::before */
@@ -28,19 +44,38 @@
 .cp-hero::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;margin-left:-50vw;
   background:
     linear-gradient(90deg,rgba(10,14,26,.90) 0%,rgba(10,14,26,.78) 50%,rgba(10,14,26,.38) 100%),
-    url("https://humanskills.in/images/hero-desktop.webp") center/cover no-repeat;
+    url("assets/hero-desktop.webp") center/cover no-repeat;
   -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 82%,transparent 100%);
   mask-image:linear-gradient(to bottom,transparent 0,#000 14%,#000 82%,transparent 100%);
   pointer-events:none}
 @media (max-width:768px){
   .cp-hero::before{background:
     linear-gradient(180deg,rgba(10,14,26,.64) 0%,rgba(10,14,26,.58) 100%),
-    url("https://humanskills.in/images/hero-mobile.webp") center/cover no-repeat}
+    url("assets/hero-mobile.webp") center/cover no-repeat}
 }
 .cp-hero .sec-head{margin:0 0 16px}
+/* make the corner tag legible over the artwork */
+.cp-hero .sec-head__tag{color:#f4f8ff;background:rgba(10,14,26,.55);border:1px solid rgba(120,200,220,.30);
+  padding:3px 10px;border-radius:999px;text-shadow:none}
 .cp-intro{font-size:16px;color:#ffffff;margin:0;max-width:680px}
 
-.cp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:18px;margin:28px 0 6px}
+/* section sub-headings */
+.cp-h2{display:flex;align-items:baseline;gap:14px;margin:46px 0 18px}
+.cp-h2__t{font-size:22px;font-weight:600;color:var(--text-bright);letter-spacing:-0.3px;margin:0;white-space:nowrap}
+.cp-h2__line{flex:1;height:1px;background:linear-gradient(90deg,var(--border-bright),transparent)}
+
+/* how it works */
+.cp-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.cp-step{position:relative;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:18px;overflow:hidden}
+.cp-step::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:.8}
+.cp-step__num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;
+  font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--accent);
+  border:1px solid var(--border-glow);background:rgba(56,200,200,.08);margin-bottom:12px}
+.cp-step__title{font-size:15px;font-weight:600;color:#ffffff;margin:0 0 6px}
+.cp-step__text{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.82);margin:0}
+
+/* cards */
+.cp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:18px;margin:26px 0 6px}
 .cp-card{position:relative;display:flex;flex-direction:column;background:var(--surface-2);
   border:1px solid var(--border-bright);border-radius:14px;padding:22px;box-shadow:var(--glow-teal);overflow:hidden}
 .cp-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;
@@ -51,12 +86,25 @@
 .cp-card__title{font-family:var(--font-display);font-size:21px;line-height:1.2;margin:0 0 8px;color:#ffffff}
 .cp-card__sub{font-size:14px;color:#ffffff;margin:0;flex:1}
 .cp-card .hero__cta{margin-top:20px;align-self:flex-start;text-align:center}
-.cp-note{font-size:13px;color:var(--text-dim);margin:24px 0 0;max-width:680px}
-.cp-note strong{color:var(--text)}
+
+/* good to know */
+.cp-gk{list-style:none;margin:0;padding:0;display:grid;gap:12px;max-width:760px}
+.cp-gk li{display:flex;gap:11px;align-items:flex-start;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.9)}
+.cp-gk svg{flex:none;width:18px;height:18px;margin-top:2px;color:var(--accent)}
+.cp-gk strong{color:#ffffff}
+
+/* sample certificate */
+.cp-sample__fig{margin:0;border:1px solid var(--border-bright);border-radius:14px;overflow:hidden;
+  background:var(--surface-2);box-shadow:var(--glow-teal);max-width:820px}
+.cp-sample__fig img{display:block;width:100%;height:auto}
+.cp-sample__cap{padding:14px 18px;font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.85);border-top:1px solid var(--border)}
+
+/* closing note */
+.cp-note{font-size:13.5px;line-height:1.6;color:#ffffff;margin:28px 0 0;max-width:680px}
 .cp-note a{color:var(--accent);text-decoration:none}
 .cp-note a:hover{text-decoration:underline}
 .cp-foot-wrap{margin-top:8px}
-@media(max-width:640px){.cp-card{padding:18px}.cp-hero{padding:34px 0 30px}}
+@media(max-width:640px){.cp-card{padding:18px}.cp-hero{padding:34px 0 30px}.cp-h2__t{white-space:normal}}
 </style>
 </head>
 <body>
@@ -126,21 +174,49 @@
       </div>
     </div>
 
+    <h2 class="cp-h2"><span class="cp-h2__t">How it works</span><span class="cp-h2__line"></span></h2>
+    <div class="cp-steps">
+      <div class="cp-step">
+        <span class="cp-step__num">1</span>
+        <h3 class="cp-step__title">Submit your details</h3>
+        <p class="cp-step__text">Fill in your name, training dates, course, organisation and department using the submit form.</p>
+      </div>
+      <div class="cp-step">
+        <span class="cp-step__num">2</span>
+        <h3 class="cp-step__title">We review and approve</h3>
+        <p class="cp-step__text">Your submission is checked and your certificate is prepared &mdash; normally within 3 working days.</p>
+      </div>
+      <div class="cp-step">
+        <span class="cp-step__num">3</span>
+        <h3 class="cp-step__title">Download your certificate</h3>
+        <p class="cp-step__text">Use your tracking code to check the status, then download the PDF once it is approved.</p>
+      </div>
+    </div>
+
+    <h2 class="cp-h2"><span class="cp-h2__t">Good to know</span><span class="cp-h2__line"></span></h2>
+    <ul class="cp-gk">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span>Certificates are normally reviewed and issued <strong>within 3 working days</strong>.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span>Keep your <strong>tracking code</strong> safe &mdash; you will need it to check your status and download your certificate.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><strong>Before you start:</strong> have your training dates, course name, organisation and department handy.</span></li>
+    </ul>
+
+    <h2 class="cp-h2"><span class="cp-h2__t">What you will receive</span><span class="cp-h2__line"></span></h2>
+    <figure class="cp-sample__fig">
+      <img src="assets/sample-certificate.jpg" width="1200" height="849" loading="lazy"
+           alt="Sample Human Skills certificate of completion showing the trainee name, course, organisation, trainer signature, Certificate ID and QR code.">
+      <figcaption class="cp-sample__cap">Every Human Skills certificate carries a unique <strong>Certificate ID</strong> and a
+        QR code for online verification. Certificates are tamper-proof and can be revoked at any time.</figcaption>
+    </figure>
+
     <p class="cp-note">
-      Every Human Skills certificate carries a unique <strong>Certificate ID</strong> and a QR code, and is
-      tamper-proof and revocable. Questions? Write to
+      Need help, or have a question about your certificate? Write to
       <a href="mailto:info@humanskills.in">info@humanskills.in</a>.
     </p>
 
     <div class="cp-foot-wrap">
 <footer class="site-foot">
       <h2 class="site-foot__text" style="margin:0 0 4px">Human Skills by Sudeep Ghosh</h2>
-      <div class="site-foot__text">© 2026. All rights reserved.</div>
-      <div class="site-foot__downloads">
-      <a class="site-foot__dl" href="https://humanskills.in/#resume-download" onclick="if(window.gtag)gtag('event','resume_cta',{cta_placement:'footer'});">Executive Resume (PDF)</a>
-      <a class="site-foot__dl" href="https://humanskills.in/proof.html#sampler-download" onclick="if(window.gtag)gtag('event','sampler_cta',{cta_placement:'footer'});">Workshop Curriculum Sampler</a>
-      <a class="site-foot__dl" href="https://humanskills.in/#checklist-download" onclick="if(window.gtag)gtag('event','checklist_cta',{cta_placement:'footer'});">AI-Readiness Checklist</a>
-    </div>
+      <div class="site-foot__text">&copy; 2026. All rights reserved.</div>
       <a class="site-foot__privacy" href="https://humanskills.in/privacy.html" aria-label="Read our Privacy Policy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>Privacy Policy</a>
       <div class="site-foot__pulse"><span class="dot"></span> Open to Collaborations</div>
     </footer>

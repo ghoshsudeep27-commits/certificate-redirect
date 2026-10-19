@@ -5,22 +5,27 @@ Human Skills by Sudeep Ghosh.
 
 ## What it does
 
-A landing page that matches humanskills.in, with three entry points:
+A landing page that matches humanskills.in, with:
 
-- **Submit your certificate request** -> https://ghoshsudeep.pythonanywhere.com/submit
-- **Track your certificate** -> https://ghoshsudeep.pythonanywhere.com/track
-- **Verify a certificate** -> https://humanskills.in/verify.html
+- three entry points — **Submit**, **Track** and **Verify**
+- a **How it works** 3-step strip
+- **Good to know** notes (3 working days turnaround, keep your tracking code, what to have ready)
+- a **sample certificate** preview
 
-## How it works
+## Files
 
-- `index.html` is the portal page. It links the main site's stylesheet
-  (`https://humanskills.in/site.css`) and logo, so it always matches the site
-  whenever the main stylesheet is updated.
-- `CNAME` sets the custom domain `certificate.humanskills.in` for GitHub Pages.
-- DNS: at Wix, a CNAME record `certificate` -> `ghoshsudeep27-commits.github.io`.
+- `index.html` — the portal page (self-contained)
+- `assets/site.css` — bundled copy of the main site's stylesheet
+- `assets/hero-desktop.webp`, `assets/hero-mobile.webp` — hero artwork
+- `assets/sample-certificate.jpg`, `assets/og-image-portal.jpg`, `assets/favicon-96x96.png`
+- `CNAME` — custom domain for GitHub Pages
+- `.nojekyll` — skip Jekyll processing
 
 ## Notes
 
-- The certificate app itself is hosted separately on PythonAnywhere; this repo
-  only serves the branded portal page.
-- To change the destination links, edit the three `hero__cta` anchors in `index.html`.
+- Assets are **bundled**, not hot-linked, so the page works even if humanskills.in
+  is slow or unavailable.
+- To re-sync styling after a change to the main site's stylesheet, replace
+  `assets/site.css` with a fresh copy.
+- The certificate app itself is hosted on PythonAnywhere; this repo serves only
+  the portal page.
