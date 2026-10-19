@@ -3,21 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Certificate Portal &mdash; Human Skills by Sudeep Ghosh</title>
+<title>Certificate Portal - Human Skills by Sudeep Ghosh</title>
 <meta name="description" content="Submit your certificate request, track an existing request, or verify a Human Skills certificate of completion. Certificates are normally issued within 3 working days.">
 <meta name="author" content="Sudeep Ghosh">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://certificate.humanskills.in/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Certificate Portal &mdash; Human Skills by Sudeep Ghosh">
+<meta property="og:title" content="Certificate Portal - Human Skills by Sudeep Ghosh">
+<meta property="og:site_name" content="Human Skills by Sudeep Ghosh Certificate Portal">
 <meta property="og:description" content="Submit, track or verify your Human Skills certificate of completion. Normally issued within 3 working days.">
 <meta property="og:url" content="https://certificate.humanskills.in/">
 <meta property="og:image" content="https://certificate.humanskills.in/assets/og-image-portal.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Certificate Portal - Human Skills by Sudeep Ghosh">
 <meta name="twitter:image" content="https://certificate.humanskills.in/assets/og-image-portal.jpg">
 <meta name="theme-color" content="#0a0e1a">
-<link rel="icon" type="image/png" href="assets/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+<link rel="apple-touch-icon" href="assets/favicon-96x96.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -28,13 +32,35 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Certificate Portal \u2014 Human Skills by Sudeep Ghosh",
-  "url": "https://certificate.humanskills.in/",
-  "description": "Submit, track or verify a Human Skills certificate of completion.",
-  "inLanguage": "en",
-  "isPartOf": { "@type": "WebSite", "name": "Human Skills by Sudeep Ghosh", "url": "https://humanskills.in/" },
-  "publisher": { "@type": "Person", "name": "Sudeep Ghosh", "url": "https://humanskills.in/" }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://certificate.humanskills.in/#website",
+      "url": "https://certificate.humanskills.in/",
+      "name": "Human Skills by Sudeep Ghosh Certificate Portal",
+      "alternateName": "Human Skills Certificate Portal",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://humanskills.in/#sudeepghosh" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://certificate.humanskills.in/#webpage",
+      "url": "https://certificate.humanskills.in/",
+      "name": "Certificate Portal - Human Skills by Sudeep Ghosh",
+      "description": "Submit, track or verify a Human Skills certificate of completion. Certificates are normally issued within 3 working days.",
+      "isPartOf": { "@id": "https://certificate.humanskills.in/#website" },
+      "about": { "@id": "https://humanskills.in/#sudeepghosh" },
+      "primaryImageOfPage": "https://certificate.humanskills.in/assets/og-image-portal.jpg",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://humanskills.in/#sudeepghosh",
+      "name": "Sudeep Ghosh",
+      "jobTitle": "Consultant Trainer",
+      "url": "https://humanskills.in/"
+    }
+  ]
 }
 </script>
 <style>

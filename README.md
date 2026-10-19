@@ -15,11 +15,19 @@ A landing page that matches humanskills.in, with:
 ## Files
 
 - `index.html` — the portal page (self-contained)
-- `assets/site.css` — bundled copy of the main site's stylesheet
-- `assets/hero-desktop.webp`, `assets/hero-mobile.webp` — hero artwork
-- `assets/sample-certificate.jpg`, `assets/og-image-portal.jpg`, `assets/favicon-96x96.png`
+- `assets/` — bundled stylesheet, hero artwork, sample certificate, OG image, favicon
+- `robots.txt` — allows crawling and points to the sitemap
+- `sitemap.xml` — single-URL sitemap for the portal
 - `CNAME` — custom domain for GitHub Pages
 - `.nojekyll` — skip Jekyll processing
+
+## SEO / indexing
+
+- **Title:** "Certificate Portal - Human Skills by Sudeep Ghosh"
+- **Site name (structured data):** "Human Skills by Sudeep Ghosh Certificate Portal"
+- **H1:** "Human Skills by Sudeep Ghosh Certificate Portal"
+- **Structured data:** schema.org `WebSite` + `WebPage` + `Person` (JSON-LD)
+- `robots` meta: `index, follow`
 
 ## Notes
 
