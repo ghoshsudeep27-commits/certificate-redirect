@@ -132,6 +132,12 @@
 .cp-note a:hover{text-decoration:underline}
 .cp-foot-wrap{margin-top:8px}
 @media(max-width:640px){.cp-card{padding:18px}.cp-hero{padding:34px 0 30px}.cp-h2__t{white-space:normal}}
+/* ===== Video guides ===== */
+.cp-videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.cp-video{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px;overflow:hidden}
+.cp-video__frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000}
+.cp-video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.cp-video__cap{margin:10px 4px 2px;font-size:13px;line-height:1.45;color:rgba(255,255,255,.82);text-align:center}
 </style>
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SXHN4B877"></script>
@@ -228,7 +234,19 @@
       </div>
     </div>
 
-    <h2 class="cp-h2"><span class="cp-h2__t">Good to know</span><span class="cp-h2__line"></span></h2>
+    <h2 class="cp-h2"><span class="cp-h2__t">Watch: how it works</span><span class="cp-h2__line"></span></h2>
+<div class="cp-videos">
+<div class="cp-video">
+<div class="cp-video__frame"><iframe src="https://www.youtube-nocookie.com/embed/rOS27x4eh14" title="How to Submit, Track, Download &amp; Verify Certificate - Human Skills Portal Guide" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="cp-video__cap"><strong>English guide</strong> &mdash; submit, track, download &amp; verify</p>
+</div>
+<div class="cp-video">
+<div class="cp-video__frame"><iframe src="https://www.youtube-nocookie.com/embed/hajjioq4qQc" title="How to Submit, Track, Download and Verify a Certificate - Human Skills Portal (Hindi)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<p class="cp-video__cap"><strong>&#2361;&#2367;&#2344;&#2381;&#2342;&#2368; &#2327;&#2366;&#2311;&#2337;</strong> &mdash; &#2360;&#2348;&#2350;&#2367;&#2335;, &#2335;&#2381;&#2352;&#2376;&#2325;, &#2337;&#2366;&#2313;&#2344;&#2354;&#2379;&#2337; &#2324;&#2352; &#2357;&#2375;&#2352;&#2368;&#2347;&#2366;&#2311;</p>
+</div>
+</div>
+
+<h2 class="cp-h2"><span class="cp-h2__t">Good to know</span><span class="cp-h2__line"></span></h2>
     <ul class="cp-gk">
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span>Certificates are normally reviewed and issued <strong>within 3 working days</strong>.</span></li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span>Keep your <strong>tracking code</strong> safe &mdash; you will need it to check your status and download your certificate.</span></li>
