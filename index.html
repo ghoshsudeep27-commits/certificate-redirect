@@ -139,14 +139,12 @@
 .cp-video__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .cp-video__cap{margin:10px 4px 2px;font-size:13px;line-height:1.45;color:rgba(255,255,255,.82);text-align:center}
 </style>
-<!-- Google Analytics (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3SXHN4B877"></script>
+<!-- Google Analytics (GA4) is loaded by consent.js, and only after the visitor accepts -->
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3SXHN4B877');
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
 </script>
+<script src="consent.js" defer></script>
 </head>
 <body>
 <nav class="top-nav" id="topNav">
